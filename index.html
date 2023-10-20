@@ -14,36 +14,39 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <nav>
-      <img src="assets/shared/logo.svg" alt="Logo" />
+    <nav role="navigation">
+      <img class="logo" src="assets/shared/logo.svg" alt="Logo" />
       <ul class="nav-ul">
-        <img class="nav-ul__close" src="assets/shared/icon-close.svg" alt="icon to close menu">
+        <img
+          class="nav-ul__close"
+          src="assets/shared/icon-close.svg"
+          alt="icon to close menu"
+        />
         <li class="nav-ul__li"><span>00</span> HOME</li>
         <li class="nav-ul__li"><span>01</span> DESTINATION</li>
         <li class="nav-ul__li"><span>02</span> CREW</li>
         <li class="nav-ul__li"><span>03</span> TECHNOLOGY</li>
-        <img class="nav-ul__hamburger" src="assets/shared/icon-hamburger.svg" alt="">
+        <img
+          class="nav-ul__hamburger"
+          src="assets/shared/icon-hamburger.svg"
+          alt=""
+        />
       </ul>
     </nav>
-    <main>
-      <div class="container">
-        <div class="container__text">
-          <div class="container__text__title">
-            <h1>So, you want to travel to </h1>
-            <h1 class="bigger">SPACE</h1>
-          </div>
-          <p>
-            Let’s face it; if you want to go to space, you might as well
-            genuinely go to outer space and not hover kind of on the edge of it.
-            Well sit back, and relax because we’ll give you a truly out of this
-            world experience!
-          </p>
+    <main role="main">
+      <div class="container__text">
+        <div class="container__text__title">
+          <h1>So, you want to travel to <span>SPACE</span></h1>
         </div>
-        <div class="container__circle">
-          <div class="container__circle__link">
-            <a href="#">Explore</a>
-          </div>
-        </div>
+        <p>
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <div class="container__circle">
+        <a class="container__circle__link" href="#">Explore</a>
       </div>
     </main>
   </body>
