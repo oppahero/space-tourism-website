@@ -1,3 +1,8 @@
+:root{
+  --dark: #0B0D17;
+  --light-blue: #D0D6F9;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,8 +42,8 @@ nav {
 }
 
 nav .logo {
-  width: 35;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 
 .nav-ul {
@@ -50,8 +55,8 @@ nav .logo {
 }
 
 .nav-ul__hamburger {
-  width: 35px;
-  height: 25px;
+  width: 24px;
+  height: 21px;
   margin-left: auto;
 }
 
@@ -71,8 +76,8 @@ nav .logo {
 }
 
 .container__circle__link {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   color: #000;
   text-transform: uppercase;
