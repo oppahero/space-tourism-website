@@ -1,0 +1,57 @@
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: "Barlow Condensed", sans-serif;
+  background: url("../assets/home/background-home-mobile.jpg"),
+    lightgray 0px 0px / 100% 100% no-repeat;
+  /* mix-blend-mode: screen; */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 0 24px;
+}
+
+.container__text {
+  /* width: 327px; */
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container__circle {
+  width: auto;
+  margin: 0 auto;
+}
+
+.container__circle__link {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .container__circle__link {
+    width: 242px;
+    height: 242px;
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container__circle__link {
+    width: 274px;
+    height: 274px;
+  }
+}
