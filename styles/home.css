@@ -1,21 +1,18 @@
 body {
-  min-height: 100vh;
-  margin: 0 auto;
-  font-family: "Barlow Condensed", sans-serif;
-  background: url("../assets/home/background-home-mobile.jpg"),
-    lightgray 0px 0px / 100% 100% no-repeat;
-  /* mix-blend-mode: screen; */
+  background: var(#0b0d17);
+  background: no-repeat url("../assets/home/background-home-desktop.jpg");
 }
 
 main {
+  padding: 0 24px;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5rem;
-  padding: 0 24px;
 }
 
 .container__text {
-  /* width: 327px; */
   width: auto;
   display: flex;
   flex-direction: column;
@@ -40,7 +37,30 @@ main {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../assets/home/background-home-tablet.jpg") no-repeat;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: url("../assets/home/background-home-mobile.jpg") no-repeat;
+  }
+}
+
 @media screen and (min-width: 768px) {
+
+  main{
+    gap: 9.75rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .container__text {
+    gap: 1.5rem;
+    width: 27.75rem;
+  }
+  
   .container__circle__link {
     width: 242px;
     height: 242px;
