@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Tourism Website - by María López</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/global-styles.css" />
+    <link rel="stylesheet" href="../styles/destination.css" />
+  </head>
+  <body>
+    <nav role="navigation">
+      <img class="logo" src="../assets/shared/logo.svg" alt="Logo" />
+      <ul class="nav-ul">
+        <img
+          class="nav-ul__close"
+          src="../assets/shared/icon-close.svg"
+          alt="icon to close menu"
+        />
+        <li class="nav-ul__li active">
+          <a href="../index.html"><span>00</span> HOME</a>
+        </li>
+        <li class="nav-ul__li">
+          <a href="../pages/destination.html"><span>01</span> DESTINATION</a>
+        </li>
+        <li class="nav-ul__li">
+          <a href="#"><span>02</span> CREW</a>
+        </li>
+        <li class="nav-ul__li">
+          <a href="#"><span>03</span> TECHNOLOGY</a>
+        </li>
+      </ul>
+      <img
+        class="nav-ul__hamburger"
+        src="../assets/shared/icon-hamburger.svg"
+        alt=""
+      />
+    </nav>
+    <main role="main">
+      <div class="container__planet">
+        <h5 class="first-title"><span>01</span> Pick your destination</h5>
+        <img
+          class="planet-image"
+          src="../assets/destination/image-moon.png"
+          alt="planet"
+        />
+      </div>
+      <div class="container__info">
+        <div class="container__info__tabs">
+          <ul class="ul-tabs">
+            <li><a href="#">Moon</a></li>
+            <li><a href="#">Mars</a></li>
+            <li><a href="#">Europa</a></li>
+            <li><a href="#">Titan</a></li>
+          </ul>
+        </div>
+        <div class="moon">
+          <h1 class="container__name">MOON</h1>
+          <p class="container__text">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <div class="divider"></div>
+          <div class="container__data">
+            <div class="container__data__distance">
+              <div class="sub-heading-2">AVG. DISTANCE</div>
+              <div class="sub-heading-1">384,400 km</div>
+            </div>
+            <div class="container__data__travel-time">
+              <div class="sub-heading-2">Est. travel time</div>
+              <div class="sub-heading-1">3 days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

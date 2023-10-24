@@ -1,6 +1,7 @@
 :root {
   --dark: #0b0d17;
   --light-blue: #d0d6f9;
+  --grey: #383b4b;
 }
 
 *,
@@ -64,6 +65,7 @@ p {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -91,6 +93,10 @@ li {
 nav .logo {
   width: 40px;
   height: 40px;
+}
+
+h5 span {
+  opacity: 0.25;
 }
 
 .nav-ul {
