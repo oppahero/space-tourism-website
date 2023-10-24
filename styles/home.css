@@ -1,6 +1,8 @@
 body {
-  background: var(#0b0d17);
+  background-color: var(--dark);
   background: no-repeat url("../assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  /* background: url("../assets/home/background-home-desktop.jpg"), lightgray 0px 0px / 100% 100% no-repeat; */
 }
 
 main {
@@ -35,6 +37,18 @@ main {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container__circle__link:hover::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.1036;
+  transition:  all 0.9s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -50,26 +64,47 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-
-  main{
+  main {
     gap: 9.75rem;
-    margin-bottom: 5.6rem;
+    margin-bottom: 89.6px;
   }
 
   .container__text {
     gap: 1.5rem;
     width: 27.75rem;
   }
-  
+
   .container__circle__link {
     width: 242px;
     height: 242px;
     font-size: 32px;
     letter-spacing: 2px;
   }
+
+  .container__circle__link:hover::after {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  main {
+    flex-direction: row;
+    max-width: 1110px;
+    padding: 0;
+    margin: 0 auto 131px auto;
+  }
+
+  .container__text {
+    align-items: start;
+  }
+
+  .container__circle {
+    margin-left: auto;
+    margin-right: 0;
+    align-self: flex-end;
+  }
+
   .container__circle__link {
     width: 274px;
     height: 274px;

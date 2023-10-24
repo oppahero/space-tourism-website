@@ -43,7 +43,8 @@ h4 {
 
 h5 {
   color: var(--light-blue);
-  text-align: center;
+  /* text-align: center; */
+  text-transform: uppercase;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -136,7 +137,6 @@ nav .logo {
 }
 
 @media screen and (min-width: 768px) {
-
   h1 {
     font-size: 9.375rem;
     line-height: 9.375rem;
@@ -162,8 +162,6 @@ nav .logo {
     width: 48px;
     height: 48px;
   }
-
-  
 
   .nav-ul {
     position: static;
@@ -213,12 +211,15 @@ nav .logo {
     height: 3px;
     background: #fff;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.4s ease-in-out;
   }
 
-  .nav-ul__li.active::before,
-  .nav-ul__li a:hover::before {
-    opacity: 0.8;
+  .nav-ul__li.active::before {
+    opacity: 1;
+  }
+
+  .nav-ul__li:hover::before {
+    opacity: 0.5021;
   }
 }
 
@@ -231,5 +232,33 @@ nav .logo {
   p {
     font-size: 1.125rem;
     line-height: 2rem;
+    text-align: start;
+  }
+
+  nav {
+    margin: 40px 0 251px 55px;
+  }
+
+  .nav-ul {
+    width: 830px;
+  }
+
+  .nav-ul__li {
+    font-size: 1rem;
+    letter-spacing: 0.16875rem;
+  }
+
+  .nav-ul::before {
+    content: "";
+    position: absolute;
+    right: 800px;
+    width: 473px;
+    height: 1px;
+    opacity: 0.2515;
+    background: #fff;
+  }
+
+  .nav-ul__li span {
+    display: inline;
   }
 }
