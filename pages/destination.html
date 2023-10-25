@@ -60,35 +60,96 @@
       <div class="container-info">
         <div class="container-info__tabs">
           <ul class="tabs-ul">
-            <li class="tabs-ul__li active"><a href="#">Moon</a></li>
-            <li class="tabs-ul__li"><a href="#">Mars</a></li>
-            <li class="tabs-ul__li"><a href="#">Europa</a></li>
-            <li class="tabs-ul__li"><a href="#">Titan</a></li>
+            <li><a href="#moon" class="active">Moon</a></li>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#europa">Europa</a></li>
+            <li><a href="#titan">Titan</a></li>
           </ul>
         </div>
         <div class="container-info__planet">
-          <h1 class="container__name">MOON</h1>
-          <p class="container__text">
-            See our planet as you’ve never seen it before. A perfect relaxing
-            trip away to help regain perspective and come back refreshed. While
-            you’re there, take in some history by visiting the Luna 2 and Apollo
-            11 landing sites.
-          </p>
-          <div class="divider"></div>
-          <div class="container__data">
-            <div class="container__data__distance">
-              <div class="sub-heading-2">AVG. DISTANCE</div>
-              <div class="sub-heading-1">384,400 km</div>
+          <div id="moon" class="container-info__planet__div active">
+            <h2 class="container__name">MOON</h2>
+            <p class="container__text">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+            <div class="divider"></div>
+            <div class="container__data">
+              <div class="container__data__distance">
+                <div class="sub-heading-2">AVG. DISTANCE</div>
+                <div class="sub-heading-1">384,400 km</div>
+              </div>
+              <div class="container__data__travel-time">
+                <div class="sub-heading-2">Est. travel time</div>
+                <div class="sub-heading-1">3 days</div>
+              </div>
             </div>
-            <div class="container__data__travel-time">
-              <div class="sub-heading-2">Est. travel time</div>
-              <div class="sub-heading-1">3 days</div>
+          </div>
+          <div id="mars" class="container-info__planet__div">
+            <h2 class="container__name">Mars</h2>
+            <p class="container__text">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle
+              Olympus Mons, the tallest planetary mountain in our solar system.
+              It’s two and a half times the size of Everest!
+            </p>
+            <div class="divider"></div>
+            <div class="container__data">
+              <div class="container__data__distance">
+                <div class="sub-heading-2">AVG. DISTANCE</div>
+                <div class="sub-heading-1">225 MIL. km</div>
+              </div>
+              <div class="container__data__travel-time">
+                <div class="sub-heading-2">Est. travel time</div>
+                <div class="sub-heading-1">9 months</div>
+              </div>
+            </div>
+          </div>
+          <div id="europa" class="container-info__planet__div">
+            <h2 class="container__name">Europa</h2>
+            <p class="container__text">
+              The smallest of the four Galilean moons orbiting Jupiter, Europa
+              is a winter lover’s dream. With an icy surface, it’s perfect for a
+              bit of ice skating, curling, hockey, or simple relaxation in your
+              snug wintery cabin.
+            </p>
+            <div class="divider"></div>
+            <div class="container__data">
+              <div class="container__data__distance">
+                <div class="sub-heading-2">AVG. DISTANCE</div>
+                <div class="sub-heading-1">628 MIL. km</div>
+              </div>
+              <div class="container__data__travel-time">
+                <div class="sub-heading-2">Est. travel time</div>
+                <div class="sub-heading-1">3 years</div>
+              </div>
+            </div>
+          </div>
+          <div id="titan" class="container-info__planet__div">
+            <h2 class="container__name">Titan</h2>
+            <p class="container__text">
+              The only moon known to have a dense atmosphere other than Earth,
+              Titan is a home away from home (just a few hundred degrees
+              colder!). As a bonus, you get striking views of the Rings of
+              Saturn.
+            </p>
+            <div class="divider"></div>
+            <div class="container__data">
+              <div class="container__data__distance">
+                <div class="sub-heading-2">AVG. DISTANCE</div>
+                <div class="sub-heading-1">1.6 BIL. km</div>
+              </div>
+              <div class="container__data__travel-time">
+                <div class="sub-heading-2">Est. travel time</div>
+                <div class="sub-heading-1">7 years</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-
-    <script src="../script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/destination.js"></script>
   </body>
 </html>

@@ -4,16 +4,20 @@ nav {
 
 main {
   padding: 0 24px;
-  margin-bottom: 3.56rem;
+  margin-bottom: 1.56rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
+.container-planet {
+  text-align: center;
+}
+
 .planet-image {
-  width: 259px;
-  height: 259px;
+  width: 174;
+  height: 174px;
 }
 
 .divider {
@@ -37,17 +41,17 @@ main {
   margin: 0 auto;
 }
 
+.tabs-ul li {
+  position: relative;
+}
+
 .tabs-ul a {
   color: var(--light-blue);
   font-size: 0.875rem;
   letter-spacing: 0.14763rem;
 }
 
-.tabs-ul__li {
-  position: relative;
-}
-
-.tabs-ul__li::before {
+.tabs-ul a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -58,12 +62,43 @@ main {
   transition: opacity 0.4s ease-in-out;
 }
 
-.tabs-ul__li.active::before {
+.tabs-ul a:hover::before {
+  opacity: 0.5021;
+}
+
+.tabs-ul a.active::before {
   opacity: 1;
 }
 
-.tabs-ul__li:hover::before {
-  opacity: 0.5021;
+.container-info__tabs {
+  margin-bottom: 20px;
+}
+
+.container__data {
+  text-align: center;
+}
+
+.sub-heading-2 {
+  color: var(--light-blue);
+  margin-bottom: 12px;
+}
+
+.sub-heading-1 {
+  margin-bottom: 32px;
+}
+
+.container-info__planet__div {
+  opacity: 0;
+  max-width: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.9s ease-in;
+}
+
+.container-info__planet__div.active {
+  opacity: 1;
+  max-width: min-content;
+  max-height: min-content;
 }
 
 @media screen and (max-width: 375px) {
