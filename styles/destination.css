@@ -13,6 +13,7 @@ main {
 
 .container-planet {
   text-align: center;
+  width: 100%;
 }
 
 .planet-image {
@@ -105,5 +106,42 @@ main {
   body {
     background: url("../assets/destination/background-destination-mobile.jpg")
       no-repeat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../assets/destination/background-destination-tablet.jpg")
+      no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    margin-bottom: 40px;
+  }
+
+  main {
+    gap: 1.5rem;
+  }
+
+  .first-title {
+    text-align: start;
+    margin-bottom: 62px;
+  }
+
+  .planet-image {
+    width: 305px;
+    height: 305px;
+  }
+
+  .tabs-ul {
+    width: 285.5px;
+    height: 34px;
+  }
+
+  .tabs-ul a {
+    font-size: 1rem;
+    letter-spacing: 0.16875rem;
   }
 }

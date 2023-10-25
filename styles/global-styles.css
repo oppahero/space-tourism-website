@@ -181,6 +181,11 @@ h5 span {
     line-height: 9.375rem;
   }
 
+  h2 {
+    font-size: 5rem;
+    line-height: normal; 
+  }
+  
   h5 {
     font-size: 1.25rem;
     letter-spacing: 0.21094rem;
