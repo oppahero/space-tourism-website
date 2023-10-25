@@ -29,7 +29,7 @@ main {
   color: #fff;
 }
 
-.ul-tabs {
+.tabs-ul {
   width: 238px;
   height: 28px;
   display: flex;
@@ -37,10 +37,33 @@ main {
   margin: 0 auto;
 }
 
-.ul-tabs a {
+.tabs-ul a {
   color: var(--light-blue);
   font-size: 0.875rem;
   letter-spacing: 0.14763rem;
+}
+
+.tabs-ul__li {
+  position: relative;
+}
+
+.tabs-ul__li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 36px;
+  height: 3px;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.tabs-ul__li.active::before {
+  opacity: 1;
+}
+
+.tabs-ul__li:hover::before {
+  opacity: 0.5021;
 }
 
 @media screen and (max-width: 375px) {
