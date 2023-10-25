@@ -20,7 +20,8 @@ body {
 
 h1,
 h2,
-h4 {
+h4,
+.sub-heading-1 {
   font-family: "Bellefair", serif;
 }
 
@@ -109,6 +110,25 @@ nav .logo {
 
 h5 span {
   opacity: 0.25;
+}
+
+.sub-heading-2 {
+  color: #fff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14763rem;
+  text-transform: uppercase;
+}
+
+.sub-heading-1 {
+  color: #fff;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .nav-ul {
