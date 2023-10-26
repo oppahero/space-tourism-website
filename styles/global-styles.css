@@ -21,6 +21,7 @@ body {
 
 h1,
 h2,
+h3,
 h4,
 .sub-heading-1 {
   font-family: "Bellefair", serif;
@@ -49,11 +50,21 @@ h2 {
 h4 {
   color: var(--dark);
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.07813rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -184,9 +195,9 @@ h5 span {
 
   h2 {
     font-size: 5rem;
-    line-height: normal; 
+    line-height: normal;
   }
-  
+
   h5 {
     font-size: 1.25rem;
     letter-spacing: 0.21094rem;
@@ -272,7 +283,7 @@ h5 span {
   h2 {
     font-size: 6.25rem;
   }
-  
+
   h5 {
     font-size: 1.75rem;
     letter-spacing: 0.29531rem;
