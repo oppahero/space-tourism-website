@@ -1,0 +1,16 @@
+body {
+  background: var(--dark) url("../assets/crew/background-crew-desktop.jpg")
+    no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: url("../assets/crew/background-crew-mobile.jpg") no-repeat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../assets/crew/background-crew-tablet.jpg") no-repeat;
+  }
+}
