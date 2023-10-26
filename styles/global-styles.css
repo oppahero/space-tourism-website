@@ -13,6 +13,7 @@
 }
 
 body {
+  min-width: 375px;
   min-height: 100vh;
   margin: 0 auto;
   font-family: "Barlow Condensed", sans-serif;
@@ -268,6 +269,10 @@ h5 span {
 }
 
 @media screen and (min-width: 1280px) {
+  h2 {
+    font-size: 6.25rem;
+  }
+  
   h5 {
     font-size: 1.75rem;
     letter-spacing: 0.29531rem;

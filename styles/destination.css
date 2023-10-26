@@ -1,3 +1,9 @@
+body {
+  background: var(--dark) no-repeat
+    url("../assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+}
+
 nav {
   margin-bottom: 11px;
 }
@@ -11,27 +17,25 @@ main {
   gap: 1rem;
 }
 
-.container-planet {
+.first-title {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.container-planet,
+.container-info {
   text-align: center;
   width: 100%;
 }
 
 .planet-image {
-  width: 174;
+  width: 174px;
   height: 174px;
 }
 
-.divider {
-  width: 327px;
-  height: 1px;
-  background: var(--grey);
-  margin: 32px 0;
-}
-
-.first-title {
-  text-align: center;
-  margin-bottom: 32px;
-  color: #fff;
+.container-info__tabs {
+  margin-bottom: 20px;
 }
 
 .tabs-ul {
@@ -56,7 +60,7 @@ main {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 36px;
+  width: 100%;
   height: 3px;
   background: #fff;
   opacity: 0;
@@ -71,12 +75,15 @@ main {
   opacity: 1;
 }
 
-.container-info__tabs {
-  margin-bottom: 20px;
-}
-
 .container__data {
   text-align: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 32px 0;
+  background: var(--grey);
 }
 
 .sub-heading-2 {
@@ -88,31 +95,35 @@ main {
   margin-bottom: 32px;
 }
 
+.container-info__planet {
+  display: flex;
+  justify-content: center;
+}
+
 .container-info__planet__div {
   opacity: 0;
   max-width: 0;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.9s ease-in;
 }
 
 .container-info__planet__div.active {
   opacity: 1;
-  max-width: min-content;
+  max-width: 573px;
   max-height: min-content;
 }
 
 @media screen and (max-width: 375px) {
   body {
-    background: url("../assets/destination/background-destination-mobile.jpg")
-      no-repeat;
+    background: cover
+      url("../assets/destination/background-destination-mobile.jpg") no-repeat;
   }
 }
 
 @media screen and (max-width: 768px) {
   body {
-    background: url("../assets/destination/background-destination-tablet.jpg")
-      no-repeat;
+    background: cover
+      url("../assets/destination/background-destination-tablet.jpg") no-repeat;
   }
 }
 
@@ -123,6 +134,7 @@ main {
 
   main {
     gap: 1.5rem;
+    margin-bottom: 3.88rem;
   }
 
   .first-title {
@@ -143,5 +155,76 @@ main {
   .tabs-ul a {
     font-size: 1rem;
     letter-spacing: 0.16875rem;
+  }
+
+  .container__data {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 90px;
+  }
+
+  .divider {
+    margin-bottom: 0;
+  }
+
+  .sub-heading-1 {
+    margin: 0;
+  }
+
+  .sub-heading-2 {
+    width: 216px;
+  }
+
+  .container-info__planet__div.active {
+    max-width: 573px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  nav {
+    margin-bottom: 76px;
+  }
+
+  main {
+    flex-direction: row;
+    width: 1160px;
+    margin: 0 auto 118px auto;
+    gap: 5rem;
+  }
+
+  .planet-image {
+    width: 450px;
+    height: 450px;
+  }
+
+  .container-info {
+    align-self: flex-end;
+  }
+
+  .container-info__tabs {
+    margin-bottom: 37px;
+    margin-left: 40px;
+  }
+
+  .tabs-ul {
+    margin: 0;
+  }
+
+  .container__name {
+    text-align: start;
+  }
+
+  .container-info__planet__div.active {
+    max-width: 444px;
+  }
+
+  .container__data {
+    justify-content: start;
+    text-align: start;
+  }
+
+  .divider {
+    margin-top: 54px;
   }
 }
