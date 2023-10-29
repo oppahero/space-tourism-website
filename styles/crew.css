@@ -115,9 +115,65 @@ h4 {
   }
 
   .container-crew__bio {
-    /* width: 458px; */
-    margin-right: 140px;
-    margin-left: 140px;
-    margin-bottom: 40px;
+    margin: 0 140px 40px 140px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  nav {
+    margin-bottom: 76px;
+  }
+
+  h4,
+  h3 {
+    text-align: start;
+  }
+
+  svg {
+    display: block;
+  }
+
+  .first-title {
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  .person-image {
+    width: 568.072px;
+    height: 712px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 188px 1fr;
+    grid-template-areas:
+      "title image"
+      "info  image";
+  }
+
+  .container-image {
+    height: 702px;
+  }
+
+  .container-crew {
+    justify-content: flex-end;
+    gap: 120px;
+  }
+
+  .container-crew__item {
+    gap: 27px;
+  }
+
+  .container-crew__info {
+    gap: 15px;
+  }
+
+  .container-crew__tabs__circles {
+    margin: 0;
+  }
+
+  .container-crew__bio{
+    width: 444px;
+    margin: 0;
   }
 }
