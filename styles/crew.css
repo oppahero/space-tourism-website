@@ -40,26 +40,26 @@ h4 {
 }
 
 .container-image {
-  grid-area: image;
-  border-bottom: 1px solid #383b4b;
   margin-bottom: 32px;
+  border-bottom: 1px solid #383b4b;
+  grid-area: image;
 }
 
 .container-crew {
   grid-area: info;
 }
 
-.container-crew__items div {
+.container-crew__item {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 .container-crew__info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
 .container-crew__tabs__circles {
   margin: 0 auto;
@@ -88,8 +88,14 @@ h4 {
     margin-bottom: 60px;
   }
 
+  .person-image {
+    width: 456.372px;
+    height: 572px;
+  }
+
   .grid {
-    max-width: fit-content;
+    max-width: max-content;
+    margin-bottom: 0;
     grid-template-areas:
       "title"
       "info"
@@ -97,11 +103,21 @@ h4 {
   }
 
   .container-image {
+    margin-bottom: 0;
     border-bottom: none;
+    height: 532px;
+    overflow: hidden;
   }
 
-  .container-crew{
-    /* display: flex;
-    flex-direction: column-reverse; */
+  .container-crew {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container-crew__bio {
+    /* width: 458px; */
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-bottom: 40px;
   }
 }
