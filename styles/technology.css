@@ -4,6 +4,10 @@ body {
   background-size: cover;
 }
 
+main{
+ margin-bottom: 56px;
+}
+
 .first-title {
   text-align: center;
   margin-bottom: 32px;
@@ -36,10 +40,16 @@ body {
     color: var(--dark);
 } */
 
+.container-info{
+  margin: 0 24px ;
+}
+
 .container-image {
-  min-height: 160px;
+  min-height: 170px;
+  max-height: 310px;
+  min-width: 375px;
   background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
