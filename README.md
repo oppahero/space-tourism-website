@@ -92,7 +92,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 1](https://lenguajejs.com/javascript/dom/navegar-elementos-dom/#:~:text=Podr%C3%ADamos%20acceder%20a%20cualquier%20hijo,propiedades%20en%20el%20hijo%20seleccionado.&text=La%20propiedad%20lastElementChild%20ser%C3%ADa%20un%20acceso%20r%C3%A1pido%20al%20%C3%BAltimo%20elemento%20hijo.) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**

@@ -12,6 +12,15 @@ main {
   justify-content: center;
 }
 
+h4 {
+  color: #fff;
+  opacity: 0.4951;
+}
+
+svg {
+  cursor: pointer;
+}
+
 .grid {
   max-width: 450px;
   text-align: center;
@@ -24,13 +33,7 @@ main {
     "info";
 }
 
-h4 {
-  color: #fff;
-  opacity: 0.4951;
-}
-
 .person-image {
-  width: 177.123px;
   height: 222px;
 }
 
@@ -40,6 +43,7 @@ h4 {
 }
 
 .container-image {
+  height: 223px ;
   margin-bottom: 32px;
   border-bottom: 1px solid #383b4b;
   grid-area: image;
@@ -64,6 +68,22 @@ h4 {
 .container-crew__tabs__circles {
   margin: 0 auto;
   margin-bottom: 32px;
+}
+
+#douglas {
+  width: 177.123px;
+}
+
+#mark {
+  width: 153.92px;
+}
+
+#victor {
+  width: 180.726px;
+}
+
+#anousheh {
+  width: 226.147px;
 }
 
 @media screen and (max-width: 375px) {
@@ -117,6 +137,22 @@ h4 {
   .container-crew__bio {
     margin: 0 140px 40px 140px;
   }
+
+  #douglas {
+    width: 456.372px;
+  }
+
+  #mark {
+    width: 368.853px;
+  }
+
+  #victor {
+    width: 433.09px;
+  }
+
+  #anousheh {
+    width: 539.508px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -152,14 +188,14 @@ h4 {
 
   .grid {
     grid-template-columns: 650px 500px;
-    grid-template-rows: 188px 562px;
+    grid-template-rows: 188px 524px;
     grid-template-areas:
       "title image"
       "info  image";
   }
 
   .container-image {
-    position: relative; 
+    position: relative;
     height: 100%;
     overflow: visible;
   }
@@ -187,7 +223,8 @@ h4 {
   }
 
   #douglas {
-    width: 444px;
+    width: 568.072px;
+    height: 712px;
   }
 
   #mark {
