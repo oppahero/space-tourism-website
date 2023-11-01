@@ -124,6 +124,12 @@ h4 {
     margin-bottom: 76px;
   }
 
+  main {
+    display: block;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
   h4,
   h3 {
     text-align: start;
@@ -139,25 +145,27 @@ h4 {
   }
 
   .person-image {
-    width: 568.072px;
-    height: 712px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
   }
 
   .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 188px 1fr;
+    grid-template-columns: 650px 500px;
+    grid-template-rows: 188px 562px;
     grid-template-areas:
       "title image"
       "info  image";
   }
 
   .container-image {
-    height: 702px;
+    position: relative; 
+    height: 100%;
+    overflow: visible;
   }
 
   .container-crew {
     justify-content: flex-end;
-    gap: 120px;
   }
 
   .container-crew__item {
@@ -172,8 +180,28 @@ h4 {
     margin: 0;
   }
 
-  .container-crew__bio{
+  .container-crew__bio {
     width: 444px;
     margin: 0;
+    height: 200px;
+  }
+
+  #douglas {
+    width: 444px;
+  }
+
+  #mark {
+    width: 453.44px;
+    height: 654px;
+  }
+
+  #victor {
+    width: 554.388px;
+    height: 681px;
+  }
+
+  #anousheh {
+    width: 615.567px;
+    height: 607px;
   }
 }

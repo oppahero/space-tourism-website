@@ -36,5 +36,6 @@ setInterval(function () {
     crewName.innerHTML = data.crew[id].name;
     crewBio.innerHTML = data.crew[id].bio;
     personImage.setAttribute("src", data.crew[id].images.png);
-}, 2500);
+    personImage.setAttribute("id", data.crew[id].id);
+}, 4500);
 
