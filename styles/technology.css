@@ -52,6 +52,10 @@ main {
   box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.25);
 }
 
+.container-info{
+  margin: 0 24px ;
+}
+
 .container-image {
   min-height: 160px;
   max-height: 310px;
