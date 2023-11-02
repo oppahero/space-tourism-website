@@ -12,6 +12,10 @@ main {
   margin-bottom: 56.33px;
 }
 
+h4 {
+  cursor: pointer;
+}
+
 .first-title {
   text-align: center;
   margin-bottom: 32px;
@@ -21,11 +25,13 @@ main {
 .subtitle {
   font-size: 0.875rem;
   letter-spacing: 0.14763rem;
+  text-align: center;
 }
 
 .tabs-ul {
-  margin-top: 34px;
-  margin-bottom: 26px;
+  margin: 34px 0 26px;
+  /* margin-top: 34px;
+  margin-bottom: 26px; */
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -36,27 +42,41 @@ main {
   height: 40px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .tabs-ul__li.active {
-  color: var(--dark);
   background-color: #fff;
-  transition: all 3s ease-in;
+  transition: all 0.5s ease-in-out;
+}
+
+.tabs-ul__li.active h4 {
+  color: var(--dark);
+}
+
+.tabs-ul h4 {
+  color: #fff;
 }
 
 .tabs-ul__li:hover {
   box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.25);
+  border: 1px solid #fff;
 }
 
-.container-info{
-  margin: 0 24px ;
+.container-portrait-image {
+  display: none;
+  width: 515px;
+  height: 527px;
+  background-image: url("../assets/technology/image-launch-vehicle-portrait.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.container-image {
+.container-landscape-image {
   min-height: 160px;
   max-height: 310px;
   height: 45vw;
@@ -67,9 +87,13 @@ main {
   background-position: center;
 }
 
+.container-info {
+  margin: 0 24px;
+}
 .container-info__text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
@@ -77,11 +101,11 @@ main {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  text-align: center;
 }
 
 .container-info__text__description {
   margin: 0 19px;
+  max-width: 458px;
 }
 
 @media screen and (max-width: 375px) {
@@ -95,5 +119,108 @@ main {
   body {
     background: cover
       url("../assets/technology/background-technology-tablet.jpg") no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    margin-bottom: 40px;
+  }
+
+  main {
+    margin-bottom: 97.33px;
+  }
+
+  .first-title {
+    text-align: start;
+    margin-bottom: 60px;
+    padding-left: 24px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.16875rem;
+  }
+
+  .tabs-ul {
+    margin: 57px 0 44px;
+  }
+
+  .tabs-ul__li {
+    width: 60px;
+    height: 60px;
+  }
+
+  .container-info__text__technology {
+    gap: 16px;
+  }
+
+  .container-landscape-image {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    display: flex;
+    justify-content: right;
+    height: 607px;
+    margin-bottom: 115.33px;
+  }
+
+  .first-title {
+    margin-bottom: 137px;
+  }
+
+  .subtitle {
+    text-align: start;
+  }
+
+  .container {
+    width: 1300px;
+    position: relative;
+  }
+
+  .container-info {
+    display: flex;
+  }
+
+  .tabs-ul {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .tabs-ul__li {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container-info__text {
+    align-items: start;
+  }
+
+  .container-info__text__description {
+    margin: 0;
+  }
+
+  .container-landscape-image {
+    display: none;
+  }
+
+  .container-portrait-image {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .container-info {
+    gap: 5rem;
+  }
+  .container-info__text__technology {
+    gap: 0.688rem;
+  }
+  .container-info__text {
+    gap: 1.063rem;
   }
 }
