@@ -1,6 +1,6 @@
 # Frontend Mentor - Space tourism website solution
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
 ## Table of contents
 
@@ -14,9 +14,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,20 +27,25 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Below are images of the views that make up the project and how they adapt to different devices.
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./assets/screenshots/Home%20-%20Desktop.png)
+![](./assets/screenshots/Home%20-%20Tablet.png)
+![](./assets/screenshots/Home%20-%20Mobile.png)
+![](./assets/screenshots/Destination%20-%20Desktop.png)
+![](./assets/screenshots/Destination%20-%20Tablet.png)
+![](./assets/screenshots/Destination%20-%20Mobile.png)
+![](./assets/screenshots/Crew%20-%20Desktop.png)
+![](./assets/screenshots/Crew%20-%20Tablet.png)
+![](./assets/screenshots/Crew%20-%20Mobile.png)
+![](./assets/screenshots/Technology%20-%20Desktop.png)
+![](./assets/screenshots/Technology%20-%20Tablet.png)
+![](./assets/screenshots/Technology%20-%20Mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/oppahero/space-tourism-website)
+- Live Site URL: [Add live site URL here](https://oppahero.github.io/space-tourism-website/)
 
 ## My process
 
@@ -54,62 +56,82 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Media Queries
+- Javascript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In one of the views for the information to be displayed in each of the tabs, the info was indicated statically in the html. And for the other two pages the information is loaded dynamically as the user clicks on the tabs.
 
-To see how you can add code snippets, see below:
+With this it was possible to put into practice the use of javascript to:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+- Get the html elements, add or remove classes, and change values ​​of an attribute
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const changePlanetTab = (e) => {
+    .
+    .
+    const planetTabActive = document.querySelector(".tabs-ul a.active");
+    planetTabActive.classList.remove("active");
+    .
+    .
+    let id = e.target.href.split("#")[1];
+    document.querySelector(`a[href="#${id}"]`).classList.add("active");
+    .
+    .
+    planetImg.setAttribute("src", `../assets/destination/image-${id}.png`)
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- Get next sibling element, the parent of an element and the first child
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```js
+const changeCircleActive = () => {
+    .
+    .
+    let newCircleActive =  document.querySelector("circle.active").nextElementSibling;
+    .
+    .
+    let firstCircle = document.querySelector("svg").firstElementChild;
+}
+
+const changeTechnologyTab = (e) => {
+    .
+    .
+    e.target.parentNode.classList.add("active");
+    .
+    .
+}
+```
+
+- Change content html and a css style
+
+```js
+const changeImage = (id) => {
+  portraitImage.style.backgroundImage = `url(${technology[id].images.portrait})`;
+  landscapeImage.style.backgroundImage = `url(${technology[id].images.landscape})`;
+};
+
+const changeText = (id) => {
+  techName.innerHTML = technology[id].name;
+  techDescription.innerHTML = technology[id].description;
+};
+```
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In this practice project, I had some trouble resizing images depending on the height of the container and applying opacity/blur on a container without affecting the elements inside them. Additionally, this was the first project to use a grid with grid areas.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+So, for future projects or challenges I want to continue putting those properties into practice.
+
 
 ### Useful resources
 
-- [Example resource 1](https://lenguajejs.com/javascript/dom/navegar-elementos-dom/#:~:text=Podr%C3%ADamos%20acceder%20a%20cualquier%20hijo,propiedades%20en%20el%20hijo%20seleccionado.&text=La%20propiedad%20lastElementChild%20ser%C3%ADa%20un%20acceso%20r%C3%A1pido%20al%20%C3%BAltimo%20elemento%20hijo.) 
+- [Example resource 1](https://lenguajejs.com/javascript/dom/navegar-elementos-dom/) - This was useful for learning properties about how to access elements related to the element in question.
 
-- [Example resource 2](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) 
-
-- [Example resource 3](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Example resource 2](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) - 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@oppahero](https://www.frontendmentor.io/profile/oppahero)
