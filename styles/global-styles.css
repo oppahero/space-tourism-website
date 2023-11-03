@@ -153,7 +153,7 @@ h5 span {
   padding: 30px 26.5px 34px 32px;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.774227142333984px);
-
+  
   transform: translateX(254px);
   -webkit-transform: translateX(254px);
   -moz-transform: translateX(254px);
@@ -168,9 +168,11 @@ h5 span {
 }
 
 .nav-ul__close {
+  display: block;
   width: 19.092px;
   height: 19.092px;
   margin-bottom: 64.95px;
+  margin-left: auto;
 }
 
 .nav-ul__hamburger {
