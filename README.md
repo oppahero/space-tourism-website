@@ -44,8 +44,8 @@ Below are images of the views that make up the project and how they adapt to dif
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/oppahero/space-tourism-website)
-- Live Site URL: [Add live site URL here](https://oppahero.github.io/space-tourism-website/)
+- Solution URL: [Github Repo](https://github.com/oppahero/space-tourism-website)
+- Live Site URL: [Site](https://oppahero.github.io/space-tourism-website/)
 
 ## My process
 
@@ -128,9 +128,9 @@ So, for future projects or challenges I want to continue putting those propertie
 
 ### Useful resources
 
-- [Example resource 1](https://lenguajejs.com/javascript/dom/navegar-elementos-dom/) - This was useful for learning properties about how to access elements related to the element in question.
+- [Navigate dom elements](https://lenguajejs.com/javascript/dom/navegar-elementos-dom/) - This was useful for learning properties about how to access elements related to the element in question.
 
-- [Example resource 2](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) - 
+- [Sizing items in CSS](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) 
 
 ## Author
 
