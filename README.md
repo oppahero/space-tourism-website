@@ -1,6 +1,6 @@
-# Frontend Mentor - Space tourism website solution
+# Space tourism website solution
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
+This is my solution to the Space tourism website challenge on Frontend Mentor
 
 ## Table of contents
 
@@ -44,7 +44,7 @@ Below are images of the views that make up the project and how they adapt to dif
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/oppahero/space-tourism-website)
+- Solution URL: [Multi-page website using flexbox, CSS grid and javascript](https://www.frontendmentor.io/solutions/multipage-website-using-flexbox-css-grid-and-javascript-0bR0N_u6Td)
 - Live Site URL: [Site](https://oppahero.github.io/space-tourism-website/)
 
 ## My process
